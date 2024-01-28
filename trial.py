@@ -1,7 +1,7 @@
-# python quiz game git
+# python quiz game
 questions = ("how many elements are there in an periodic table?: " ,
-"Which animal lays the largest eggs?:" ,
-             "what is the most abundnt gas in earth's atmosphere?: " ,
+             "Which animal lays the largest eggs?:" ,
+             "what is the most abundant gas in earth's atmosphere?: " ,
              "how many bones are in the human body?:" ,
              "which planet in the solar system is the hottest?: ")
 
@@ -20,19 +20,18 @@ question_num = 0
 for question in questions:
     print("---------------------")
     print(question)
-
     for option in options[question_num]:
         print(option)
 
-   guess = input("Enter (A, B , C ,D): ").upper()
-   guesses.append(guess)
-   if guess == answers[question_num]
-       score += 1
-       print("Correct")
-   else:
-       print("Incorrect")
-       Print(f"{answers[question_num]} is the Correct Answer")
-   question_num += 1
+    guess = input("Enter (A, B , C ,D): ").upper()
+    guesses.append(guess)
+    if guess == answers[question_num]:
+        score += 1
+        print("Correct")
+    else:
+        print("Incorrect")
+        print(f"{answers[question_num]} is the Correct Answer")
+    question_num += 1
 
 
 print("---------------")
